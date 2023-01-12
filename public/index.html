@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <!-- For IE <= 9 -->
+    <!--[if IE]>
+    <script type="text/javascript">
+      window.location = "./legacy.html";
+    </script>
+    <![endif]-->
+    <!-- For IE > 9 -->
+    <script type="text/javascript">
+      if (window.navigator.msPointerEnabled) {
+        window.location = "./legacy.html";
+      }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto+Condensed:wght@400&family=Russo+One&display=swap" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '162850599255815');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=162850599255815&ev=PageView&noscript=1"
+    ></noscript>
+    <!-- End Facebook Pixel Code -->
+  </head>
+  <body>
+    <noscript>
+      <meta http-equiv="refresh" content="0;url=./legacy.html">
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
